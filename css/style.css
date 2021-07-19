@@ -70,21 +70,44 @@
 .rot{
     animation: start 5s linear infinite;
 }
-
+.hov1{
+   
+	background-color:#fff2f2
+}
 .hov1:hover{
     transform: scale(1.08,1.03);
+	background-color:#ff8989
+
+
+}
+.hov2{
+	background-color:#fff9f1
+
 }
 
 .hov2:hover{
     transform: scale(1.08,1.03);
-}
+	background-color:#ffd3b3
 
+
+}
+.hov3{
+	background-color:#edffec
+
+}
 .hov3:hover{
     transform: scale(1.08,1.03);
-}
+	background-color:#cbeca9
 
+}
+.hov4{
+	background-color:#eefbff
+
+}
 .hov4:hover{
     transform: scale(1.08,1.03);
+	background-color:#929ad6
+
 }
 
 @keyframes gocorona {

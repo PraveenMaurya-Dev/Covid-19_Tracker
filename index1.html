@@ -5,12 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Covid-19 Tracker</title>
+	
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script>
       showMapData("Total");
       function showMapData(stateName) {
@@ -32,6 +44,7 @@
           });
       }
     </script>
+	
 <style>
       /* Remove the navbar's default margin-bottom and rounded borders */ 
       .navbar {
@@ -48,40 +61,73 @@
 
 </style>
 </head>
-<body>
+<body style="background-color:#f7f8fc">
+		
+		<nav class="navbar navbar-default" style="height:20px">
+  <div class="container-fluid">
+    <div class="navbar-header" style="border-radius:5px">
+		<!---
+      <a class="navbar-brand" href="file:///C:/Users/Prave/Desktop/Project/index1.html" style="font-weight: bold;font-size: 25px;">Covid-19 Tracker</a>	-->
+	  <img src="C:\Users\Prave\Desktop\Project\characters\covid-19-tracker.png" alt="Covid-19 Tracker" width="350" height="85">
 
-
- 
-    <nav> 
-       
-<nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Body Frame</a>
     </div>
-    <nav class="navbar navbar-inverse">
-     <div class="container-fluid">
-          <a class="navbar-brand" href="#">Header</a>
-          </div>
+	  <nav class="navbar navbar-inverse">
+     
+		    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">COVID-19 Self Assessment </button>
           </nav>
   </nav>
+<div class="container" style="height:5%">
+
+	<p style="height:8px;color:#ff476d;font-weight:bold">39,96,95,879 vaccine doses administered</p>
+
+  <div class="progress" style="height:20px">
+    <div class="progress-bar bg-success" style="width:12.1%;">
+      Fully vaccinated (6.1%)
     </div>
-    <header>
-  </nav>
-          
-    </nav>
+    <div class="progress-bar bg-info" style="width:23.9%">
+      At least one dose(23.9%)
+    </div>
+  </div>
+</div>
+	<!--- -->
+  </div>
+</nav>
+	<!--- start-->
+
+
+		
+	  <!--- end nav-->
+	  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+		<iframe style="width:100%;border:none;min-height:600px" src="https://my.castlighthealth.com/corona-virus-testing-sites/self-assessment/assessment.html?from=ABC"></iframe>
+		
+	  </div>
+	  </div>
+	  </div>
+	  
+ 
     <span class="border"></span>
-    <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6">
+  
+        <div class="row" style="background-color:">
+          <div class="col-lg-6" style="background-color:">
             
             <div style="height: 100px; background-color: rgba(10, 10, 10, 0.384);">
-                <div class="shadow p-3 mb-5 bg-body rounded; w-100 p-3" style="height: 1750px ; background-color: rgba(238, 238, 238, 0.253);">
-                    <div class="container-fluid  bg-info maincol ">
+                <div class="shadow p-3 mb-5 bg-body rounded; w-100 p-3" style="height: 1750px ; background-color: rgba(238, 238, 238, 0.253)">
+      <div class="container-fluid" style="background-color:">
+	  
+
+
         
+		<!---  style="{color: blue; background: white} 
+            :visited {color: green}
+            :hover {background: yellow}
+            :visited:hover {color: purple} --->
+		
       <!-- body left part here -->
-        <div class="row justify-content-center bg-light ">
-          <div class="col-lg-3 log-md-3 col-sm-5 col-8 text-danger text-center hov1">
-            <h3><kbd  class="text-danger ">Total Cases</kbd></h3>
+        <div class="row justify-content-center bg-light " style=" border-radius: 15px">
+          <div class="col-lg-3 log-md-3 col-sm-5 col-8 text-danger text-center hov1" style="border-radius: 15px;" >
+			<h4 style="font-weight: bold;">Total Cases</h4>
 
             <h4 id="app">Abcs</h4>
             <h5 class="d-inline-block plus">+</h5>
@@ -89,14 +135,16 @@
 
           </div>
 
-          <div class="col-lg-3 log-md-3 col-sm-5 col-8 text-warning text-center  hov2">
-            <h3><kbd class="text-warning">Total Active</kbd></h3>
+          <div class="col-lg-3 log-md-3 col-sm-5 col-8 text-warning text-center  hov2" style="border-radius: 15px;">
+      
+			<h4 style="font-weight: bold;">Total Active</h4>
             
             <h4 id="app1">Abcs</h4>
           
           </div>
-          <div class="col-lg-3 log-md-3 col-sm-5 col-8 text-success text-center hov3">
-            <h3><kbd class="text-success">Recovered</kbd></h3>
+          <div class="col-lg-3 log-md-3 col-sm-5 col-8 text-success text-center hov3" style="border-radius: 15px;">
+          
+			<h4 style="font-weight: bold;">Recovered</h4>
             
             <h4 id="app2">Abcs</h4>
             <h5 class="d-inline-block">+</h5>
@@ -105,8 +153,8 @@
           </div>
 
 
-          <div class="col-lg-3 log-md-3 col-sm-5 col-8 text-muted text-center hov4">
-            <h3><kbd class="text-muted">Deaths</kbd></h3>
+          <div class="col-lg-3 log-md-3 col-sm-5 col-8 text-muted text-center hov4" style="border-radius: 15px;">
+          <h4 style="font-weight: bold;">Death</h4>
             <h4 id="app3">Abcs</h4>
             <h5 class="d-inline-block">+</h5>
             <h5 class="d-inline-block" id="subapp3"></h5>
@@ -116,22 +164,29 @@
         </div>
 
       <table class="table table-striped">
-        <thead class="thead-light" >
-          <tr class="border">
+	
+        <thead>
+          <tr class="border table-info">
             <th scope="col">States/UT</th>
             <th scope="col">Total</th>
             <th scope="col">Active</th>
             <th scope="col">Recovered</th>
             <th scope="col">Death</th>
           </tr>
-        
-        
+      
+      <!--- 
+	         <th scope="row" id="sdata"></th>
+            <td id="sdata1" class="table-danger"></td>
+            <td id="sdata2" class="table-warning"></td>
+            <td id="sdata3" class="table-success"> </td>
+            <td id="sdata4" class="table-primary"></td>
+	  --->
           <tr class="border">
             <th scope="row" id="sdata"></th>
-            <td id="sdata1"></td>
-            <td id="sdata2"></td>
-            <td id="sdata3"></td>
-            <td id="sdata4"></td>
+            <td id="sdata1"  style="background-color:#fff2f2"></td>
+            <td id="sdata2"  style="background-color:#fff9f1"></td>
+            <td id="sdata3"  style="background-color:#edffec"> </td>
+            <td id="sdata4"  style="background-color:#eefbff"></td>
           </tr>
          
         </tbody>
@@ -143,12 +198,17 @@
     
                 </div>
                 <!-- end here -->
+				
+				<div class="row justify-content-center bg-light">
+					<div class='tableauPlaceholder' id='viz1625740058823' style='position: relative'><noscript><a href='https:&#47;&#47;www.tableau.com&#47;'><img alt='GLOBAL ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COVID-19DataHubGlobalTracker&#47;GLOBAL&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;COVID-19DataHubGlobalTracker&#47;GLOBAL?:language=en&amp;:embed=y&amp;;publish=yes&amp;:origin=viz_share_link&amp;:toolbar=n&amp;:display_count=y&amp;:size=1209,700&amp;:tabs=n' /> <param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COVID-19DataHubGlobalTracker&#47;GLOBAL&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value=';publish=yes' /><param name='origin' value='viz_share_link' /><param name='tabs' value='n' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1625740058823');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='1410px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height='1510px';} else { vizElement.style.width='100%';vizElement.style.height='1800px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+				</div>
+				
             <div class="h-100 d-inline-block" style="background-color: rgba(8, 8, 8, 0.1)">
             
             </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" style="fill:#f7f8fc">
             <div style="height: 100px; background-color: rgba(10, 10, 10, 0.384);">
                 <div class="shadow p-3 mb-5 bg-body rounded; w-100 p-3" style="height: 1000px ; background-color: rgba(238, 238, 238, 0.253);">
 
@@ -156,21 +216,21 @@
          <!-- Right Body -->
         <!--  <div w3-include-html="design.html"></div> Big Info-->
        <div class="india">India COVID-19 Map</div>
-      <div class="state-name">...</div>
+      <div class="state-name" >...</div>
       <div class="data">
-        <div class="active">
+        <div class="active" style="background-color:#fff2f2;border-radius: 40px;">
           <div class="caseActive">Active</div>
           <div class="caseFigActive">...</div>
         </div>
-        <div class="confirmed">
+        <div class="confirmed" style="background-color:#fff9f1;border-radius: 40px;">
           <div class="caseConfirmed">Confirmed</div>
           <div class="caseFigConfirmed">...</div>
         </div>
-        <div class="recod">
+        <div class="recod" style="background-color:#edffec;border-radius: 40px;">
           <div class="caseRecod">Recovered</div>
           <div class="caseFigRecod">...</div>
         </div>
-        <div class="died">
+        <div class="died" style="background-color:#eefbff;border-radius: 40px;">
           <div class="caseDied">Died</div>
           <div class="caseFigDied">...</div>
         </div>
@@ -189,9 +249,10 @@
           <defs>
             <style type="text/css">
               .land {
-                fill: #cccccc21;
+                fill: #eefbff;
                 fill-opacity: 1;
-                stroke: #777;
+                stroke: #009dff;
+				
                 stroke-opacity: 1;
                 stroke-width: 2;
               }
@@ -212,7 +273,7 @@
           <g>
             <path
               id="IN-AN"
-              onmouseout="document.querySelector('#IN-AN').style.strokeWidth='2';document.querySelector('#IN-AN').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-AN').style.strokeWidth='2';document.querySelector('#IN-AN').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-AN').style.stroke='tomato';document.querySelector('#IN-AN').style.strokeWidth='4';showMapData('Andaman and Nicobar Islands')"
               title="Andaman and Nicobar Islands"
               class="land"
@@ -220,15 +281,15 @@
             />
             <path
               id="IN-AP"
-              onmouseout="document.querySelector('#IN-AP').style.strokeWidth='2';document.querySelector('#IN-AP').style.stroke='#777';"
-              onmouseover="document.querySelector('#IN-AP').style.stroke='tomato';document.querySelector('#IN-AP').style.strokeWidth='4';showMapData('Andhra Pradesh')"
+              onmouseout="document.querySelector('#IN-AP').style.strokeWidth='2';document.querySelector('#IN-AP').style.stroke='#009dff';"
+              onmouseover="document.querySelector('#IN-AP').style.stroke='tomato';document.querySelector('#IN-AP').style.strokeWidth='4';showMapData('Andhra Pradesh');"
               title="Andhra Pradesh"
               class="land"
               d="M295.496,580.058l-0.002,0.007l0,0L295.496,580.058zM296.148,580.019l-0.389,2.472l-0.753,-1.071l-0.016,-0.797L296.148,580.019zM295.496,580.058l-0.122,-0.623l-0.272,0.44l-1.262,0.097l-0.058,-0.726l-0.901,0.577l1.737,0.761l0,0l-0.023,1.031l0.454,0.139l0.663,1.489l-7.647,3.743l-4.692,1.843l-3.756,-1.061l-3.105,0.367l-2.669,1.325l-2.599,5.691l0.099,0.962l-2.908,3.077l-0.273,0.462l0.384,0.864l-0.948,0.829l-3.03,0.408l-0.866,-1.46l0.261,-0.773l0.373,0.006l-0.117,-0.576l-2.482,-0.866l-3.128,0.602l-2.228,1.063l-1.913,1.26l-1.459,1.628l-1.448,4.463l-2.123,3.362l-1.075,5.006l1.396,7.45l1.762,3.089l-1.448,10.008l2.407,6.473l-0.174,3.849l1.651,4.409l-3.018,-5.475l-0.564,-0.255l-0.116,1.896l-0.617,-0.618l0.355,-0.612l-0.401,-0.077l-1.169,1.837l2.315,2.109l1.569,0.036l1.581,1.4l0,0l0.001,1.134l-0.756,-0.422l-0.956,-1.876l-1.638,-0.043l-1.73,-1.257l-1.577,0.171l-0.083,0.418l0.891,0.177l0.069,0.371l-0.631,-0.07l-0.22,0.605l-0.702,0.175l0.029,0.714l-0.644,0.29l0.441,0.646l-0.587,0.815l-1.556,0.695l-1.065,-0.019l-0.429,0.476l-0.538,-0.443l-0.687,0.653l1.332,1.042l-0.848,0.61l-0.451,-0.575l-0.714,0.309l0.153,-0.566l-0.476,0.095l-0.1,-1.121l-1.848,0.781l-0.66,-0.465l-0.271,-0.939l-2.238,-0.268l-1.136,0.439l1.056,0.464l-0.297,1.479l0.529,-0.378l0.197,0.279l-0.5,0.176l0.045,0.45l-1.591,0.521l0.142,0.711l-0.976,0.701l-0.849,-0.946l-1.027,0.121l-0.001,0.676l-0.615,0.412l-0.758,1.651l-1.751,-0.146l-1.873,-1.331l-1.365,0.187l-0.438,0.697l0.653,0.352l-0.895,-0.023l-0.123,-1.419l-2.722,0.871l-0.912,-0.229l-0.182,1.105l-0.893,-0.289l-0.784,0.833l0.691,1.277l-0.439,-0.004l-0.916,3.166l-0.762,0.573l0.044,1.244l-0.487,0.126l-0.176,-0.509l0,0l0,0l0,0l-0.114,0.037l-0.358,-0.036l-0.102,0.856l-0.647,0.022l0.041,0.956l-1.911,0.119l-1.63,-0.876l-0.545,-0.83l-1.561,0.225l0.782,-0.722l-0.137,-0.798l0,0l0.428,-2.022l1.298,0.005l0.886,-1.727l0.689,0.702l1.203,-0.117l-0.275,-1.45l0.738,0.114l-0.133,-1.457l1.11,-0.453l-0.056,-0.617l0.545,-0.335l-0.402,-0.476l1.263,-0.788l-0.589,-0.656l0.581,-0.363l0.184,-1.235l-0.457,-0.799l-0.729,0.937l-1.027,-1.118l-0.749,0.204l-0.241,-0.443l-0.695,0.329l-0.508,-0.35l0.636,-0.263l-0.884,-0.486l0.746,-4.77l-3.414,-0.194l-0.93,0.659l0.224,-1.279l-0.7,-0.155l-0.1,-0.541l-1.57,0.286l-0.469,-0.678l0.12,-0.454l0.865,0.081l0.084,-0.553l-0.512,-0.498l0.697,-0.931l-0.098,-1.369l-1.516,-0.982l-0.07,0.726l-1.102,-0.188l-0.406,0.889l-0.444,0.005l-0.044,-1.292l0.745,-0.281l-0.243,-1.226l-1.148,1.143l-0.515,-0.728l-1.438,-0.079l-0.25,0.563l0.447,1.029l-1.082,0.529l0.051,0.493l-1.374,0.479l-0.086,1.236l-0.276,-0.614l-0.666,0.196l0.136,-0.541l-0.442,0.036l-0.809,0.437l0.55,0.433l-0.324,0.168l-0.537,-0.347l-0.828,0.581l-0.762,-0.587l-0.154,1.246l-0.522,-0.452l-0.092,0.58l-0.695,0.084l0.161,-2.597l-1.021,-0.047l0.332,-0.769l-1.362,-0.226l-0.826,0.427l-0.274,-0.675l-1.182,0.381l-0.348,-1.188l-0.467,0.718l-0.138,-0.423l-0.547,0.457l-0.037,-1.234l-0.441,0.377l0.137,0.918l-0.809,0.163l0.803,0.614l0.091,1.414l-1.493,-0.133l-0.737,0.472l-0.706,-0.698l-0.313,0.829l-0.395,-0.21l-0.506,-1.538l1.023,-1.692l0.502,-0.087l-0.114,-0.604l-2.193,-2.082l0.919,-0.912l-1.005,-1.329l-0.907,-0.082l0.162,-0.6l0.954,-0.148l0.098,-0.502l1.637,0.355l-0.241,1.601l0.322,0.962l2.039,0.238l0.549,1.084l3.478,-0.712l0.843,0.91l-0.114,1.839l0.881,-0.024l0.03,0.382l0.744,-0.629l-0.413,-0.576l0.48,-0.7l-1.151,-0.008l0.162,-0.819l-1.197,-0.334l1.45,-1.727l-0.12,-0.324l-0.946,0.483l0.067,-0.607l0.606,-0.112l0.272,-0.766l2.317,0.307l-0.087,-2.592l-0.87,-0.009l-0.259,-0.807l-1.187,-0.325l-0.223,0.638l0.852,1.787l-0.668,0.432l-0.594,-0.82l0.081,-0.843l-1.667,-0.146l0.033,-1.182l-1.03,0.431l-1.67,-0.573l-0.842,1.079l-0.143,1.594l-0.623,0.084l-0.538,-0.648l-2.34,-0.012l-0.271,-0.688l0.528,-0.469l-1.486,-1.125l0.084,-0.941l0.627,-0.5l0.596,0.301l0.046,-0.979l0.62,-0.713l-2.16,0.211l-0.893,-1.174l-0.583,-0.1l-0.828,-1.597l0.793,-2.852l-0.371,-0.961l1.432,-0.532l0.329,-3.444l-0.765,0.28l-1.342,-0.406l0.435,-1.007l-0.216,-1.179l0.475,-0.418l1.67,1.338l2.2,0.395l0.395,-0.414l0.967,0.008l-0.123,0.512l0.792,0.117l1.574,-2.597l-0.459,-0.478l0.536,-0.135l0.01,-0.967l-0.78,-0.591l0.906,-0.816l-0.34,-0.573l-0.68,-0.09l-0.12,-0.808l-1.007,0.117l-0.715,-2.445l-1.193,-1.203l0.032,-0.333l1.145,0.137l0.056,-2.89l1.092,-0.411l0.728,0.6l0.184,-0.733l-1.711,-1.63l0.433,-1.917l-0.871,-0.187l0.915,-1.461l1.622,-0.894l2.208,-0.371l5.454,0.799l0,0l2.029,0.197l1.101,0.762l1.197,-0.218l1.739,0.46l1.853,-0.662l2.39,0.794l0.72,-0.927l0.573,1.244l0.961,0.376l0.34,-0.471l0.813,-0.001l0.321,-1.113l1.213,-0.619l0.391,-2.212l1.247,0.047l1.873,-1.122l3.212,0.532l1.212,-0.921l2.023,1.564l1.285,0.065l1.287,-1.381l0.028,-1.502l0.525,0.079l0.204,0.93l0.792,0.107l-0.105,-1.661l0.42,-0.442l2.207,-0.94l3.049,0.62l0.881,-0.487l0.138,-5.824l0.854,-1.156l3.359,-0.456l1.478,-1.042l3.158,-0.685l2.655,-1.467l0.74,0.849l1.08,-0.168l0.842,1.312l1.174,-0.092l1.879,-2.239l0.456,-1.487l-0.766,-0.845l-0.867,-0.234l0.375,-0.957l0.76,-1.263l1.842,-0.436l1.01,-1.297l0.4,0.692l1.275,0.055l0.82,1.19l0.374,1.847l0.825,0.349l0.3,0.953l0.56,-0.84l1.107,0.748l0.08,0.55l2.228,0.59l0.864,-0.541l-1.037,-0.805l0.218,-0.962l0.456,-0.106l-0.054,-1.144l-1.944,-0.472l-0.073,0.669l-2.712,-1.157l0.638,-0.944l-0.455,-0.925l0.588,-0.457l0.533,1.147l0.538,0.17l0.753,-0.724l0.291,-1.254l1.341,-0.656l2.02,1.095l-0.357,0.71l1.803,-0.206l2.234,0.847l0.552,-0.548l0.24,-2.078l0.9,0.008l-0.167,-1.204l1.798,0.47l1.157,-0.743l2.434,-0.408l0.393,-1.954l1.792,0.049l1.204,-1.539l0.986,0.729l0.917,-0.097l1.628,-1.901l0.167,-1.976l0.466,-0.662l-0.435,-0.439l1.428,-2.14l0.114,-0.835l4.307,-2.313l0.218,-0.45l-0.722,-0.893l0,0l0.895,-0.935l3.155,-1.225l1.526,-1.439l2.84,0.313l0.357,0.723l1.346,0.675l0.535,-0.146l-0.006,-1.354l0.648,-0.3l0.16,0.529l0.508,-0.058l0.075,-2.232l0.507,0.379l0.159,-0.319l-1.236,-1.226l0.559,-0.44l0.085,-1.105l0.732,-0.173l0.443,-0.709l-1.227,-0.234l1.047,-1.139l-0.485,-0.895l2.36,-2.785l0.526,0.771l0.502,-0.048l0.147,1.527l0.494,-0.073l-0.389,1.055l1.368,0.457l0.226,0.487l-0.729,0.869l0.09,0.805l0.966,0.906l0.668,-1.268l2.266,-0.976l0.549,-1.399l-0.357,-0.543l0.48,-0.432l0.958,0.649l0.831,-0.065l0.151,1.006l0.854,0.34l1.769,-0.726l0.759,0.201l0.102,-1.179l-0.436,0.222l-0.462,-0.559l1.548,-2.052l-1.19,-0.219l-0.117,-0.439l0.567,-0.407l-0.962,-0.043l0.074,-1.111l0.825,-0.332l1.716,-2.599l1.439,0.664l0.07,0.579l0.3,-1.097l0.978,0.193l0.281,-0.717l1.606,-0.23l0.055,-0.701l0.783,0.028l0.314,-0.63l-1.354,-1.485l0.703,0.079l-0.722,-0.743l-0.351,0.883l-0.496,-1.601l0.859,-0.444l1.309,0.302l0.977,1.112l-0.146,-1.188l0.546,-0.015l0.07,-0.46l-0.389,-1.067l0.29,-0.178l0.427,0.543l0.246,-0.257l0.173,0.88l-0.421,-0.044l0.039,0.346l0.752,0.125l0.315,-1.507l0.677,0.529l0.537,-0.845l-0.212,-0.708l0.607,-0.733l1.544,3.02l0.548,0.102l-0.365,0.587l0.838,1.475l0.717,0.229l-0.848,-1.555l0.994,-0.659l1.74,4.178l1.457,0.48l1.827,-0.123l1.146,1.264l0.862,-0.078l0.594,-0.604l3.787,-0.357l0.079,-1.643l0.552,0.345l0.191,-0.355l-0.421,-0.352l0.758,0.121l-0.468,-0.408l0.681,0.223l0.661,-0.606l-0.289,-0.536l0.524,-0.635l-0.534,-1.033l1.184,0.719l0.372,-0.874l1.605,-0.971l0.451,1.146l0.524,-0.921l0.875,0.056l-0.007,-0.633l-0.72,0.1l-0.586,-1.043l1.452,0.044l0.08,-0.768l0.776,0.123l-0.173,0.696l0.527,0.521l0,0l0.878,0.54l-3.728,4.292l-0.604,1.839l-1.844,1.745l-2.297,3.435l-4.825,4.502l-0.023,0.926l-8.484,4.283l-3.07,2.092l-0.901,1.507l-2.5,2.309v0.729l-1.373,1.862l-2.744,2.931l-12.682,6.427l-5.007,3.866l-1.482,1.868l-0.541,2l-0.477,0.229l0.151,0.954l1.163,1.009l0.89,-0.247l-0.238,2.469L295.496,580.058z"
             />
             <path
               id="IN-AR"
-              onmouseout="document.querySelector('#IN-AR').style.strokeWidth='2';document.querySelector('#IN-AR').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-AR').style.strokeWidth='2';document.querySelector('#IN-AR').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-AR').style.stroke='tomato';document.querySelector('#IN-AR').style.strokeWidth='4';showMapData('Arunachal Pradesh')"
               title="Arunachal Pradesh"
               class="land"
@@ -236,7 +297,7 @@
             />
             <path
               id="IN-AS"
-              onmouseout="document.querySelector('#IN-AS').style.strokeWidth='2';document.querySelector('#IN-AS').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-AS').style.strokeWidth='2';document.querySelector('#IN-AS').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-AS').style.stroke='tomato';document.querySelector('#IN-AS').style.strokeWidth='4';showMapData('Assam')"
               title="Assam"
               class="land"
@@ -244,7 +305,7 @@
             />
             <path
               id="IN-BR"
-              onmouseout="document.querySelector('#IN-BR').style.strokeWidth='2';document.querySelector('#IN-BR').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-BR').style.strokeWidth='2';document.querySelector('#IN-BR').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-BR').style.stroke='tomato';document.querySelector('#IN-BR').style.strokeWidth='4';showMapData('Bihar')"
               title="Bihar"
               class="land"
@@ -252,7 +313,7 @@
             />
             <path
               id="IN-CH"
-              onmouseout="document.querySelector('#IN-CH').style.strokeWidth='2';document.querySelector('#IN-CH').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-CH').style.strokeWidth='2';document.querySelector('#IN-CH').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-CH').style.stroke='tomato';document.querySelector('#IN-CH').style.strokeWidth='4';showMapData('Chandigarh')"
               title="Chandigarh"
               class="land"
@@ -268,7 +329,7 @@
             />
             <path
               id="IN-DD"
-              onmouseout="document.querySelector('#IN-DD').style.strokeWidth='2';document.querySelector('#IN-DD').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-DD').style.strokeWidth='2';document.querySelector('#IN-DD').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-DD').style.stroke='tomato';document.querySelector('#IN-DD').style.strokeWidth='4';showMapData('Daman and Diu')"
               title="Daman and Diu"
               class="land"
@@ -277,7 +338,7 @@
             
             <path
               id="IN-DN"
-              onmouseout="document.querySelector('#IN-DN').style.strokeWidth='2';document.querySelector('#IN-DN').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-DN').style.strokeWidth='2';document.querySelector('#IN-DN').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-DN').style.stroke='tomato';document.querySelector('#IN-DN').style.strokeWidth='4';showMapData('Dadra and Nagar Haveli')"
               title="Dadra and Nagar Haveli"
               class="land"
@@ -285,7 +346,7 @@
             />
             <path
               id="IN-DL"
-              onmouseout="document.querySelector('#IN-DL').style.strokeWidth='2';document.querySelector('#IN-DL').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-DL').style.strokeWidth='2';document.querySelector('#IN-DL').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-DL').style.stroke='tomato';document.querySelector('#IN-DL').style.strokeWidth='4';showMapData('Delhi')"
               title="Delhi"
               class="land"
@@ -293,7 +354,7 @@
             />
             <path
               id="IN-GA"
-              onmouseout="document.querySelector('#IN-GA').style.strokeWidth='2';document.querySelector('#IN-GA').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-GA').style.strokeWidth='2';document.querySelector('#IN-GA').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-GA').style.stroke='tomato';document.querySelector('#IN-GA').style.strokeWidth='4';showMapData('Goa')"
               title="Goa"
               class="land"
@@ -301,7 +362,7 @@
             />
             <path
               id="IN-GJ"
-              onmouseout="document.querySelector('#IN-GJ').style.strokeWidth='2';document.querySelector('#IN-GJ').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-GJ').style.strokeWidth='2';document.querySelector('#IN-GJ').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-GJ').style.stroke='tomato';document.querySelector('#IN-GJ').style.strokeWidth='4';showMapData('Gujarat')"
               title="Gujarat"
               class="land"
@@ -309,7 +370,7 @@
             />
             <path
               id="IN-HP"
-              onmouseout="document.querySelector('#IN-HP').style.strokeWidth='2';document.querySelector('#IN-HP').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-HP').style.strokeWidth='2';document.querySelector('#IN-HP').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-HP').style.stroke='tomato';document.querySelector('#IN-HP').style.strokeWidth='4';showMapData('Himachal Pradesh')"
               title="Himachal Pradesh"
               class="land"
@@ -317,7 +378,7 @@
             />
             <path
               id="IN-HR"
-              onmouseout="document.querySelector('#IN-HR').style.strokeWidth='2';document.querySelector('#IN-HR').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-HR').style.strokeWidth='2';document.querySelector('#IN-HR').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-HR').style.stroke='tomato';document.querySelector('#IN-HR').style.strokeWidth='4';showMapData('Haryana')"
               title="Haryana"
               class="land"
@@ -325,7 +386,7 @@
             />
             <path
               id="IN-JH"
-              onmouseout="document.querySelector('#IN-JH').style.strokeWidth='2';document.querySelector('#IN-JH').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-JH').style.strokeWidth='2';document.querySelector('#IN-JH').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-JH').style.stroke='tomato';document.querySelector('#IN-JH').style.strokeWidth='4';showMapData('Jharkhand')"
               title="Jharkhand"
               class="land"
@@ -333,7 +394,7 @@
             />
             <path
               id="IN-JK"
-              onmouseout="document.querySelector('#IN-JK').style.strokeWidth='2';document.querySelector('#IN-JK').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-JK').style.strokeWidth='2';document.querySelector('#IN-JK').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-JK').style.stroke='tomato';document.querySelector('#IN-JK').style.strokeWidth='4';showMapData('Jammu and Kashmir')"
               title="Jammu and Kashmir"
               class="land"
@@ -341,7 +402,7 @@
             />
             <path
               id="IN-KA"
-              onmouseout="document.querySelector('#IN-KA').style.strokeWidth='2';document.querySelector('#IN-KA').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-KA').style.strokeWidth='2';document.querySelector('#IN-KA').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-KA').style.stroke='tomato';document.querySelector('#IN-KA').style.strokeWidth='4';showMapData('Karnataka')"
               title="Karnataka"
               class="land"
@@ -349,7 +410,7 @@
             />
             <path
               id="IN-KL"
-              onmouseout="document.querySelector('#IN-KL').style.strokeWidth='2';document.querySelector('#IN-KL').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-KL').style.strokeWidth='2';document.querySelector('#IN-KL').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-KL').style.stroke='tomato';document.querySelector('#IN-KL').style.strokeWidth='4';showMapData('Kerala')"
               title="Kerala"
               class="land"
@@ -357,7 +418,7 @@
             />
             <path
               id="IN-LD"
-              onmouseout="document.querySelector('#IN-LD').style.strokeWidth='2';document.querySelector('#IN-LD').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-LD').style.strokeWidth='2';document.querySelector('#IN-LD').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-LD').style.stroke='tomato';document.querySelector('#IN-LD').style.strokeWidth='4';showMapData('Lakshadweep')"
               title="Lakshadweep"
               class="land"
@@ -365,7 +426,7 @@
             />
             <path
               id="IN-MH"
-              onmouseout="document.querySelector('#IN-MH').style.strokeWidth='2';document.querySelector('#IN-MH').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-MH').style.strokeWidth='2';document.querySelector('#IN-MH').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-MH').style.stroke='tomato';document.querySelector('#IN-MH').style.strokeWidth='4';showMapData('Maharashtra')"
               title="Maharashtra"
               class="land"
@@ -373,7 +434,7 @@
             />
             <path
               id="IN-ML"
-              onmouseout="document.querySelector('#IN-ML').style.strokeWidth='2';document.querySelector('#IN-ML').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-ML').style.strokeWidth='2';document.querySelector('#IN-ML').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-ML').style.stroke='tomato';document.querySelector('#IN-ML').style.strokeWidth='4';showMapData('Meghalaya')"
               title="Meghalaya"
               class="land"
@@ -381,7 +442,7 @@
             />
             <path
               id="IN-MN"
-              onmouseout="document.querySelector('#IN-MN').style.strokeWidth='2';document.querySelector('#IN-MN').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-MN').style.strokeWidth='2';document.querySelector('#IN-MN').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-MN').style.stroke='tomato';document.querySelector('#IN-MN').style.strokeWidth='4';showMapData('Manipur')"
               title="Manipur"
               class="land"
@@ -389,7 +450,7 @@
             />
             <path
               id="IN-MP"
-              onmouseout="document.querySelector('#IN-MP').style.strokeWidth='2';document.querySelector('#IN-MP').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-MP').style.strokeWidth='2';document.querySelector('#IN-MP').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-MP').style.stroke='tomato';document.querySelector('#IN-MP').style.strokeWidth='4';showMapData('Madhya Pradesh')"
               title="Madhya Pradesh"
               class="land"
@@ -397,7 +458,7 @@
             />
             <path
               id="IN-MZ"
-              onmouseout="document.querySelector('#IN-MZ').style.strokeWidth='2';document.querySelector('#IN-MZ').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-MZ').style.strokeWidth='2';document.querySelector('#IN-MZ').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-MZ').style.stroke='tomato';document.querySelector('#IN-MZ').style.strokeWidth='4';showMapData('Mizoram')"
               title="Mizoram"
               class="land"
@@ -405,7 +466,7 @@
             />
             <path
               id="IN-NL"
-              onmouseout="document.querySelector('#IN-NL').style.strokeWidth='2';document.querySelector('#IN-NL').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-NL').style.strokeWidth='2';document.querySelector('#IN-NL').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-NL').style.stroke='tomato';document.querySelector('#IN-NL').style.strokeWidth='4';showMapData('Nagaland')"
               title="Nagaland"
               class="land"
@@ -413,7 +474,7 @@
             />
             <path
               id="IN-OR"
-              onmouseout="document.querySelector('#IN-OR').style.strokeWidth='2';document.querySelector('#IN-OR').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-OR').style.strokeWidth='2';document.querySelector('#IN-OR').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-OR').style.stroke='tomato';document.querySelector('#IN-OR').style.strokeWidth='4';showMapData('Odisha')"
               title="Odisha"
               class="land"
@@ -421,7 +482,7 @@
             />
             <path
               id="IN-PB"
-              onmouseout="document.querySelector('#IN-PB').style.strokeWidth='2';document.querySelector('#IN-PB').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-PB').style.strokeWidth='2';document.querySelector('#IN-PB').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-PB').style.stroke='tomato';document.querySelector('#IN-PB').style.strokeWidth='4';showMapData('Punjab')"
               title="Punjab"
               class="land"
@@ -429,7 +490,7 @@
             />
             <path
               id="IN-PY"
-              onmouseout="document.querySelector('#IN-PY').style.strokeWidth='2';document.querySelector('#IN-PY').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-PY').style.strokeWidth='2';document.querySelector('#IN-PY').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-PY').style.stroke='tomato';document.querySelector('#IN-PY').style.strokeWidth='4';showMapData('Puducherry')"
               title="Puducherry"
               class="land"
@@ -437,7 +498,7 @@
             />
             <path
               id="IN-RJ"
-              onmouseout="document.querySelector('#IN-RJ').style.strokeWidth='2';document.querySelector('#IN-RJ').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-RJ').style.strokeWidth='2';document.querySelector('#IN-RJ').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-RJ').style.stroke='tomato';document.querySelector('#IN-RJ').style.strokeWidth='4';showMapData('Rajasthan')"
               title="Rajasthan"
               class="land"
@@ -445,7 +506,7 @@
             />
             <path
               id="IN-TN"
-              onmouseout="document.querySelector('#IN-TN').style.strokeWidth='2';document.querySelector('#IN-TN').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-TN').style.strokeWidth='2';document.querySelector('#IN-TN').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-TN').style.stroke='tomato';document.querySelector('#IN-TN').style.strokeWidth='4';showMapData('Tamil Nadu')"
               title="Tamil Nadu"
               class="land"
@@ -453,7 +514,7 @@
             />
             <path
               id="IN-SK"
-              onmouseout="document.querySelector('#IN-SK').style.strokeWidth='2';document.querySelector('#IN-SK').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-SK').style.strokeWidth='2';document.querySelector('#IN-SK').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-SK').style.stroke='tomato';document.querySelector('#IN-SK').style.strokeWidth='4';showMapData('Sikkim')"
               title="Sikkim"
               class="land"
@@ -461,7 +522,7 @@
             />
             <path
               id="IN-TG"
-              onmouseout="document.querySelector('#IN-TG').style.strokeWidth='2';document.querySelector('#IN-TG').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-TG').style.strokeWidth='2';document.querySelector('#IN-TG').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-TG').style.stroke='tomato';document.querySelector('#IN-TG').style.strokeWidth='4';showMapData('Telangana')"
               title="Telangana"
               class="land"
@@ -469,7 +530,7 @@
             />
             <path
               id="IN-TR"
-              onmouseout="document.querySelector('#IN-TR').style.strokeWidth='2';document.querySelector('#IN-TR').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-TR').style.strokeWidth='2';document.querySelector('#IN-TR').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-TR').style.stroke='tomato';document.querySelector('#IN-TR').style.strokeWidth='4';showMapData('Tripura')"
               title="Tripura"
               class="land"
@@ -477,7 +538,7 @@
             />
             <path
               id="IN-UP"
-              onmouseout="document.querySelector('#IN-UP').style.strokeWidth='2';document.querySelector('#IN-UP').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-UP').style.strokeWidth='2';document.querySelector('#IN-UP').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-UP').style.stroke='tomato';document.querySelector('#IN-UP').style.strokeWidth='4';showMapData('Uttar Pradesh')"
               title="Uttar Pradesh"
               class="land"
@@ -485,7 +546,7 @@
             />
             <path
               id="IN-UT"
-              onmouseout="document.querySelector('#IN-UT').style.strokeWidth='2';document.querySelector('#IN-UT').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-UT').style.strokeWidth='2';document.querySelector('#IN-UT').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-UT').style.stroke='tomato';document.querySelector('#IN-UT').style.strokeWidth='4';showMapData('Uttarakhand')"
               title="Uttarakhand"
               class="land"
@@ -493,7 +554,7 @@
             />
             <path
               id="IN-WB"
-              onmouseout="document.querySelector('#IN-WB').style.strokeWidth='2';document.querySelector('#IN-WB').style.stroke='#777';"
+              onmouseout="document.querySelector('#IN-WB').style.strokeWidth='2';document.querySelector('#IN-WB').style.stroke='#009dff';"
               onmouseover="document.querySelector('#IN-WB').style.stroke='tomato';document.querySelector('#IN-WB').style.strokeWidth='4';showMapData('West Bengal')"
               title="West Bengal"
               class="land"
@@ -533,16 +594,30 @@
                   <div ></div>
                   <!-- End here-->
                 </div>
-                
-            <div class="h-100 d-inline-block" style="background-color: rgba(8, 8, 8, 0.1)">
-            
+                <div class="row justify-content-center bg-light" style="border-radius: 40px;">
+					<div class="flourish-embed flourish-chart" data-src="story/230085"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+				</div>
+				
+				<div class="row justify-content-center bg-light" style= " border-radius: 40px;">
+					<div class="flourish-embed flourish-chart" data-src="story/767666"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+				</div>
+				
+				<div class="row justify-content-center bg-light" style= " border-radius: 40px;">
+					<div class="flourish-embed flourish-map" data-src="story/555214"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+				</div>
+				<div class="row justify-content-center bg-light" style= " border-radius: 40px;">
+					
+					<div class="flourish-embed" data-src="visualisation/6672926"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+				</div>
+			<div class="h-100 d-inline-block" style="background-color: rgba(8, 8, 8, 0.1)">
+				
             </div>
             </div>
           </div>
         
         </div>
-      </div>
-</div>
+ 
+
 
 </body>
 </html>
